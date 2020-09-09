@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+        p {
+            padding: 20px;
+            background-color:lightblue;
+            border-radius: 5px;
+        }
+        .btn {
+            text-decoration: none;
+            color: rgb(238, 238, 238);
+            font-weight: 600;
+            background-color: tomato;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: all .2s;
+        }
+    </style>
+</head>
+<body>
+<section style="padding: 5px; font-size: 16px; background-color:tomato; border-radius: 5px;">
+    <p>
+    Hi, <b>{{ user_name }}</b> !
+    <br><br>
+    My name is Mikhail, welcome to my blog project. This project was created by Django (backend) & NuxtJS
+    (frontend).<br>
+    You get this email, because the register a new account was successfully! <b>To verify your email, you need to click this
+    button below ↓↓↓</b>
+    <br>
+    <br>
+    <a href="{{ abs_url }}" class="btn">Confirm email</a>
+</p>
+<hr>
+<p>
+    If you dont understand what about this letter, please sorry and <b>delete it</b>.
+</p>
+</section>
+</body>
+</html>
