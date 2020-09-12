@@ -3,6 +3,8 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+.idea/
+
 # C extensions
 *.so
 
@@ -106,8 +108,6 @@ media/
 *.pyc
 *.db
 *.pid
-
-.idea/
 
 # Ignore Django Migrations in Development if you are working on team
 
